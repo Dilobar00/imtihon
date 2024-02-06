@@ -1,0 +1,250 @@
+@media (max-width: 1500px) {
+  header {
+    background-size: cover;
+    height: 100%;
+    .header {
+      &__right {
+        ul {
+          display: none;
+        }
+        .nav__bar {
+          display: block;
+        }
+      }
+    }
+    .wrap {
+      padding: 3rem 0;
+    }
+  }
+  .col {
+    &__pic {
+      flex: 0.5;
+      width: 100px;
+    }
+  }
+
+  .desc {
+    &__aside {
+      &_card {
+        width: 350px;
+      }
+    }
+  }
+  .careers {
+    &__left {
+      flex: 0.3;
+    }
+    &__right {
+      flex: 0.8;
+      img {
+        width: 100%;
+        height: 450px;
+      }
+    }
+  }
+}
+@media (max-width: 1160px) {
+  .col {
+    &__grid {
+      //   padding: 0 30px;
+      p {
+        width: 400px;
+        font-size: 16px;
+      }
+    }
+  }
+  .desc {
+    &__aside {
+      &_card {
+        width: 300px;
+      }
+    }
+  }
+  .partners {
+    &__barnds {
+      img {
+        width: 120px;
+      }
+    }
+  }
+}
+@media (max-width: 1060px) {
+  header {
+    background-size: cover;
+    height: 100%;
+    .header {
+      &__socials {
+        display: none;
+      }
+      &__phone {
+        display: none;
+      }
+    }
+    .wrap {
+      padding: 3rem 0;
+    }
+  }
+}
+@media (max-width: 850px) {
+  header {
+    background-size: contain;
+    height: auto;
+  }
+  .col {
+    &__top {
+      // display: flex;
+      flex-direction: column;
+    }
+    &__text {
+      // display: flex;
+      flex-direction: column;
+    }
+    &__grid {
+      width: 100%;
+      padding: 50px 40px;
+      p {
+        width: 100%;
+      }
+    }
+
+    &__pic {
+      width: 100%;
+      display: none;
+    }
+    &__pic.respons__1,
+    &__pic.respons__2 {
+      width: 100%;
+      display: block;
+    }
+  }
+  .inner {
+    a,
+    p {
+      width: 336px;
+      font-size: 15px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+  .contact {
+    &__boxes {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+  footer {
+    .row {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: start;
+    }
+  }
+}
+@media (max-width: 700px) {
+  header {
+    height: 100%;
+
+    .wrap {
+      &__top {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          width: 300px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .desc {
+    &__aside {
+      justify-content: center;
+      &__card {
+        width: 340px;
+        p {
+          font-size: 15px;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .careers {
+    .row {
+      flex-direction: column;
+    }
+    &__left {
+      width: 100%;
+      padding: 4rem;
+    }
+  }
+}
+@media (max-width: 560px) {
+  header {
+    .header {
+      &__right {
+        gap: 15px;
+      }
+      &__btn {
+        display: none;
+      }
+    }
+
+    .wrap {
+      padding-top: 10rem;
+
+      &__title {
+        p {
+          width: 100%;
+          font-size: 15px;
+        }
+      }
+
+      &__btns {
+        flex-direction: column;
+        width: 100%;
+        button {
+          width: 90%;
+        }
+      }
+      &__text {
+        &_boxes {
+          flex-direction: column;
+          align-items: start;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .partners {
+    &__barnds {
+      flex-direction: column;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .inner {
+    background-image: url("../images/Rectangle6.png");
+  }
+  .column {
+    .holder {
+      justify-content: start;
+      .column__heading {
+        flex-direction: column;
+        align-items: start;
+      }
+    }
+  }
+
+  .contact {
+    .row {
+      @include dFlex(space-between, start);
+      flex-direction: column;
+    }
+  }
+}
